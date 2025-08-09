@@ -18,7 +18,7 @@ CREATE TABLE packages (
     id SERIAL PRIMARY KEY,
     code VARCHAR(50) UNIQUE NOT NULL,
     description VARCHAR(200),
-    weight DECIMAL(3,3),
+    weight DECIMAL(10,2),
     create_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     current_state_id INT REFERENCES states(id),
     source_id INT REFERENCES locations(id),
