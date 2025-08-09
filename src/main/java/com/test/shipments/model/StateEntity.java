@@ -3,7 +3,7 @@ package com.test.shipments.model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "state")
+@Table(name = "states")
 public class StateEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
