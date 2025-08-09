@@ -3,7 +3,7 @@
 
 _API sencilla para la gestión de envios de una empresa de logística_
 
-_Se necesita una base de datos H2 persinstente configurable dese el archivo properties_
+_Se necesita una base de datos H2 persistente configurable desde el archivo properties_
 
 _Gestión de datos y migraciones con flyway_
 
