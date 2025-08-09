@@ -1,12 +1,6 @@
-package com.test.shipments.model;
+package com.test.shipments.model.request;
 
-import jakarta.persistence.*;
-
-@Entity
-@Table(name = "locations")
-public class LocationEntity {
-    @Id
-    private Long id;
+public class LocationRequest {
     private String code;
     private String name;
     private String address;
@@ -15,12 +9,14 @@ public class LocationEntity {
     private String zipCode;
     private String geolocation;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
+    public LocationRequest(String code, String address, String name, String city, String country, String zipCode, String geolocation) {
+        this.code = code;
+        this.address = address;
+        this.name = name;
+        this.city = city;
+        this.country = country;
+        this.zipCode = zipCode;
+        this.geolocation = geolocation;
     }
 
     public String getCode() {
@@ -63,19 +59,19 @@ public class LocationEntity {
         this.country = country;
     }
 
-    public String getZipCode() {
-        return zipCode;
-    }
-
-    public void setZipCode(String zipCode) {
-        this.zipCode = zipCode;
-    }
-
     public String getGeolocation() {
         return geolocation;
     }
 
     public void setGeolocation(String geolocation) {
         this.geolocation = geolocation;
+    }
+
+    public String getZipCode() {
+        return zipCode;
+    }
+
+    public void setZipCode(String zipCode) {
+        this.zipCode = zipCode;
     }
 }

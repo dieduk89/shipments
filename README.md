@@ -61,3 +61,56 @@ Ejemplo response:
 "state": "En preparación"
 }
 ```
+
+## GET api/data/locations
+_consultar localidades_
+
+Ejemplo response:
+```
+[
+... lista de localidades ...
+]
+```
+
+
+## GET api/data/states
+
+_consultar estados_
+
+Ejemplo response:
+```
+[
+... lista de estados ...
+]
+```
+
+## POST api/data/addLocation
+
+_crear una nueva localidad_
+
+Ejemplo request:
+```
+{
+        "code": "UBX15",
+        "name": "Ubicación 15",
+        "address": "Dirección 15",
+        "city": "Ciudad 15",
+        "country": "EEUU",
+        "zipCode": "00000",
+        "geolocation": "35.49432, -93.86948"
+}
+```
+
+Ejemplo response:
+```
+{
+    "id": 15,
+    "code": "UBX15",
+    "name": "Ubicación 15",
+    "address": "Dirección 15",
+    "city": "Ciudad 15",
+    "country": "EEUU",
+    "zipCode": "00000",
+    "geolocation": "35.49432, -93.86948"
+}
+```

@@ -12,4 +12,7 @@ public interface LocationRepository extends JpaRepository<LocationEntity, Long> 
 
     @Query
     public Optional<LocationEntity> findByCode(String code);
+
+    @Query(value = "select max(id) as id from locations", nativeQuery = true)
+    public Long getMaxId();
 }

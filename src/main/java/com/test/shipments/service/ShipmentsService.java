@@ -5,7 +5,6 @@ import com.test.shipments.model.PackageEntity;
 import com.test.shipments.model.StateEntity;
 import com.test.shipments.model.StateHistoryEntity;
 import com.test.shipments.model.request.ShipmentRequest;
-import com.test.shipments.model.response.ListShipmentsResponse;
 import com.test.shipments.model.response.StatePackageResponse;
 import com.test.shipments.repository.LocationRepository;
 import com.test.shipments.repository.PackageRepository;
@@ -17,7 +16,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
