@@ -1,5 +1,5 @@
 
-# Test API Rest para gestián de envíos
+# Test API Rest para gestión de envíos
 
 _API sencilla para la gestión de envios de una empresa de logística_
 
