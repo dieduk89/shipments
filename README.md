@@ -3,6 +3,10 @@
 
 _API sencilla para la gestión de envios de una empresa de logística_
 
+_Se necesita una base de datos H2 persinstente configurable dese el archivo properties_
+
+_Gestión de datos y migraciones con flyway_
+
 ## Endpoints 
 
 _lista de endpoints implementados_
@@ -46,6 +50,17 @@ Ejemplo response:
 "packageCode": "eDggsKHy1O",
 "state": "Recibido"
 }
+```
+
+## GET api/shipments/list?[filters]
+_consultar lista de envíos por filtro_
+
+Ejemplo request: api/shipments/list?source=none&destination=none&state=none&date=none
+
+Ejemplo response:
+```
+[
+... listado de envíos ...
 ```
 
 

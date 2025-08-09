@@ -93,7 +93,7 @@ public class ShipmentsService {
         if(requestParams.get("date") != null) {
             date = requestParams.get("date");
         }
-
+        // Mejorar --> Serializar la lista de JSON para obtener un response mas amgigable
         return packageRepository.listShipments(source, destination, state, date);
     }
 

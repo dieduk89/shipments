@@ -2,7 +2,6 @@ package com.test.shipments.controller;
 
 import com.test.shipments.model.PackageEntity;
 import com.test.shipments.model.request.ShipmentRequest;
-import com.test.shipments.model.response.ListShipmentsResponse;
 import com.test.shipments.model.response.StatePackageResponse;
 import com.test.shipments.service.ShipmentsService;
 import org.springframework.beans.factory.annotation.Autowired;
